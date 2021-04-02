@@ -17,6 +17,10 @@ import CounterTwo from './components/CounterTwo';
 import CounterThree from './components/CounterThree';
 import ComponentA from './components/ComponentA';
 import ComponentB from './components/ComponentB';
+import DataFetchingOne from './components/DataFetchingOne';
+import DataFetchingTwo from './components/DataFetchingTwo';
+import ParentComponent from './components/ParentComponent';
+import Counter from './components/Counter';
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -36,11 +40,15 @@ function App() {
   const [count, dispatch] = useReducer(reducer, initialState)
   return (
     <div className="App">
-      <CountContext.Provider value={{countState: count, countDispatch: dispatch}}>
+      <Counter />
+      {/* <ParentComponent /> */}
+      {/* <DataFetchingTwo /> */}
+      {/* <DataFetchingOne /> */}
+      {/* <CountContext.Provider value={{countState: count, countDispatch: dispatch}}>
       Count - {count}
       <ComponentA />
       <ComponentB />
-      </CountContext.Provider>
+      </CountContext.Provider> */}
       {/* <CounterThree /> */}
       {/* <CounterTwo /> */}
       {/* <CounterOne /> */}
