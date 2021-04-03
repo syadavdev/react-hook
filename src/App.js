@@ -12,8 +12,10 @@ import HookCounterTwo from './components/HookCounterTwo';
 import HookMouse from './components/HookMouse';
 import IntervalHookCounter from './components/IntervalHookCounter';
 import MouseContainer from './components/MouseContainer';
-import CounterOne from './components/CounterOne';
-import CounterTwo from './components/CounterTwo';
+/* import CounterOne from './components/CounterOne'; */
+import CounterOne from './hooks/CounterOne'
+/* import CounterTwo from './components/CounterTwo'; */
+import CounterTwo from './hooks/CounterTwo'
 import CounterThree from './components/CounterThree';
 import ComponentA from './components/ComponentA';
 import ComponentB from './components/ComponentB';
@@ -21,6 +23,12 @@ import DataFetchingOne from './components/DataFetchingOne';
 import DataFetchingTwo from './components/DataFetchingTwo';
 import ParentComponent from './components/ParentComponent';
 import Counter from './components/Counter';
+import FocusInput from './components/FocusInput';
+import ClassTimer from './components/ClassTimer';
+import HookTimer from './components/HookTimer';
+import DocTitleOne from './components/DocTitleOne';
+import DocTitleTwo from './components/DocTitleTwo';
+import UserForm from './components/UserForm';
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -40,7 +48,15 @@ function App() {
   const [count, dispatch] = useReducer(reducer, initialState)
   return (
     <div className="App">
-      <Counter />
+      <UserForm />
+      {/* <CounterOne />
+      <CounterTwo /> */}
+      {/* <DocTitleOne />
+      <DocTitleTwo /> */}
+      {/* <HookTimer /> */}
+      {/* <ClassTimer /> */}
+      {/* <FocusInput /> */}
+      {/* <Counter /> */}
       {/* <ParentComponent /> */}
       {/* <DataFetchingTwo /> */}
       {/* <DataFetchingOne /> */}
