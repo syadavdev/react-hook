@@ -29,6 +29,7 @@ import HookTimer from './components/HookTimer';
 import DocTitleOne from './components/DocTitleOne';
 import DocTitleTwo from './components/DocTitleTwo';
 import UserForm from './components/UserForm';
+import ReportFetching from './components/ReportFetching';
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -48,7 +49,8 @@ function App() {
   const [count, dispatch] = useReducer(reducer, initialState)
   return (
     <div className="App">
-      <UserForm />
+      <ReportFetching />
+      {/* <UserForm /> */}
       {/* <CounterOne />
       <CounterTwo /> */}
       {/* <DocTitleOne />
